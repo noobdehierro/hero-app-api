@@ -1,0 +1,24 @@
+POST http://localhost:5000/api/auth/new
+content-type: application/json
+
+{
+    "name": "julion alvarez",
+    "email": "julion@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/auth/
+content-type: application/json
+
+{
+    "email": "julion@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/api/auth/renew
+content-type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjAyY2Q4Mjc2Mzk2NjQzYWVmZTI4NGEiLCJuYW1lIjoianVsaW9uIGFsdmFyZXoiLCJpYXQiOjE2NDQzNTIzMzMsImV4cCI6MTY0NDM1NTkzM30.Eg8CD0geFyW8Dw3JNmcZob3CJM2WYyL_A11PyxxlaLQ
+
+
